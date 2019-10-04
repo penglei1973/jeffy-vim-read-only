@@ -180,3 +180,23 @@ if has("gdb")
 	let g:vimgdb_debug_file=""
 	run macros/gdb_mappings.vim
 endif
+
+let g:SuperTabRetainCompletionType=2
+let g:SuperTabDefaultCompletionType="<C-X><C-O>"
+
+set tags+=tags
+set tags+=~/.vim/tags/libc.tags
+set tags+=~/.vim/tags/cpp.tags
+set tags+=~/.vim/tags/glib.tags
+set tags+=~/.vim/tags/susv2.tags
+"set tags+=~/workspace/pl/tags
+
+set completeopt=longest,menu
+
+let OmniCpp_NamespaceSearch=1
+let OmniCpp_GlobalScopeSearch=2
+let OmniCpp_ShowAccess=1
+let OmniCpp_MayCompleteDot=1
+let OmniCpp_MayCompleteArrow=1
+let OmniCpp_MayCompleteScope=1
+let OmniCpp_DefaultNamespaces=["std","_GLIBCXX_STD"]
