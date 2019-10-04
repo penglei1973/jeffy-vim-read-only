@@ -1,14 +1,8 @@
 简介
 ============
 
-jeffy-vim用于配置Vim编辑器，使Vim工作得更像一个C/C++的IDE。在一些插件的润色下，
-jeffy-vim实现了很多IDE的基本功能，比如：代码解析、代码补全、函数跳转、 程序调试等。
-我还自己编写了一个插件用于管理项目，包括生成tags和cscope的数据库、高亮用户定义的
-类型和函数等功能，让工程管理起来更方便。
-
-由于要使用ctags和cscope来管理项目数据，所以项目的文件不能太多，否则数据库的生成
-及更新就会变得很慢。因此，如果要使用jeffy-vim的配置文件，你的项目就不能太大。如果
-你需要更大型项目的Vim配置文件，可以email我(jeffy.du@163.com)。
+自己用的vim配置，fork自jeffy-vim。
+3.2版本的使用需要vim8以上支持异步。
 
 
 安装
@@ -17,15 +11,14 @@ jeffy-vim实现了很多IDE的基本功能，比如：代码解析、代码补�
 请安装7.2及以上的Vim版本；
 安装前请先备份您自己的Vim配置文件；
 Linux系统下需要自己安装ctags、cscope程序；
-如果没有svn，也可以在Downloads里面下载，但不能保证是最新版本。
 
 如果是Linux系统，运行如下命令进行安装：
 
-    $ svn checkout http://jeffy-vim.googlecode.com/svn/trunk/ jeffy-vim-read-only
-    $ cd jeffy-vim-read-only
+    $ git clone https://github.com/penglei1973/pl_vim vim_sh
+    $ cd vim_sh
     $ ./install.sh
 
-如果是Windows系统，把svn上的代码checkout下来后，运行里面的install.bat进行安装。
+如果是Windows系统，把github上的代码clone下来后，运行里面的install.bat进行安装。
 
 
 使用
